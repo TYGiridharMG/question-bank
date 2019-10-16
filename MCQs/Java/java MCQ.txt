@@ -1,0 +1,753 @@
+METHODS:
+=========
+1. Method signature consists of
+
+a) Method Name, Return Type and Number Of Arguments
+b) Access Modifier, Method Name and Types Of Arguments
+c) Method Name, Number Of Arguments, Types Of Arguments and Order Of Arguments
+d) Return Type, Access Modifier and Order Of Arguments
+Answer:C
+
+2. What is the process of defining a method in a subclass having same name & type signature as a method in its superclass?
+a) Method overloading
+b) Method overriding
+c) Method hiding
+d) None of the mentioned
+Answer:b
+
+3. Which of these keywords can be used to prevent Method overriding?
+a) static
+b) constant
+c) protected
+d) final
+Answer:d
+
+4. Which of these is correct way of calling a constructor having no parameters, of superclass A by subclass B?
+a) super(void);
+b) superclass.();
+c) super.A();
+d) super();
+Answer:d
+
+5. In the below code, which call to sum() method is appropriate?
+
+class Output 
+{
+ 
+        public static int sum(int ...x)
+        {
+             return; 
+        }
+        static void main(String args[]) 
+        {    
+             sum(10);
+             sum(10,20);
+             sum(10,20,30);
+             sum(10,20,30,40);
+        } 
+}
+a) only sum(10)
+b) only sum(10,20)
+c) only sum(10) & sum(10,20)
+d) all of the mentioned
+Answer:D
+
+6. What is the output of this program?
+
+    class equality 
+    {
+        int x;
+        int y;
+        boolean isequal()
+        {
+            return(x == y);  
+        } 
+    }    
+    class Output 
+    {
+        public static void main(String args[])
+        {
+            equality obj = new equality();
+            obj.x = 5;
+            obj.y = 5;
+            System.out.println(obj.isequal());
+        } 
+    }
+a) false
+b) true
+c) 0
+d) 1
+Answer:B
+
+7. What is the return type of a method that does not return any value?
+a) int
+b) float
+c) void
+d) double
+Answer:C
+
+8. What is the process of defining more than one method in a class differentiated by method signature?
+a) Function overriding
+b) Function overloading
+c) Function doubling
+d) None of the mentioned
+Answer:B
+
+9.What is the output of this program?
+
+    class box 
+    {
+        int width;
+        int height;
+        int length;
+        int volume;
+        void volume(int height, int length, int width) 
+        {
+             volume = width * height * length;
+        } 
+    }    
+    class Prameterized_method{
+        public static void main(String args[]) 
+        {
+            box obj = new box();
+            obj.height = 1;
+            obj.length = 5;
+            obj.width = 5;
+            obj.volume(3, 2, 1);
+            System.out.println(obj.volume);        
+        } 
+    }
+a) 0
+b) 1
+c) 6
+d) 25
+Answer:C
+
+10. What is the output of this program?
+
+    class equality 
+    {
+        int x;
+        int y;
+        boolean isequal()
+        {
+            return(x == y);  
+        } 
+    }    
+    class Output 
+    {
+        public static void main(String args[]) 
+        {
+            equality obj = new equality();
+            obj.x = 5;
+            obj.y = 5;
+            System.out.println(obj.isequal);
+        } 
+    }
+a) false
+b) true
+c) 0
+d) 1
+Answer:B
+
+CONSTRUCTORS:
+=============
+1. Which among the following is called first, automatically, whenever an object is created?
+a) Class
+b) Constructor
+c) New
+d) Trigger
+Answer:B
+
+2. Which among the following is not a necessary condition for constructors?
+a) Its name must be same as that of class
+b) It must not have any return type
+c) It must contain a definition body
+d) It can contains arguments
+Answer:C
+
+3. Which constructor is called while assigning some object with another?
+a) Default
+b) Parameterized
+c) Copy
+d) Direct assignment is used
+Answer:C
+
+4. It’s necessary to pass object by reference in copy constructor because:
+a) Constructor is not called in pass by reference
+b) Constructor is called in pass by reference only
+c) It passes the address of new constructor to be created
+d) It passes the address of new object to be created
+Answer:A
+
+5. Which returning an object, we can use ____________
+a) Default constructor
+b) Zero argument constructor
+c) Parameterized constructor
+d) Copy constructor
+Answer:D
+
+6. If programmer doesn’t define any copy constructor then _____________
+a) Compiler provides an implicit copy constructor
+b) Compiler gives an error
+c) The objects can’t be assigned with another objects
+d) The program gives run time error if copying is used
+Answer:A
+
+7. When is the constructor called for an object?
+a) As soon as overloading is required
+b) As soon as class is derived
+c) As soon as class is created
+d) As soon as object is created
+Answer:D
+
+8. Which among the following function can be used to call default constructor implicitly in java?
+a) this()
+b) that()
+c) super()
+d) sub()
+Answer:A
+
+9. Number of destructors called are
+a) Always equal to number of constructors called
+b) Always less than the number of constructors called
+c) Always greater than the number of constructors called
+d) Always less than or equal to number of constructors
+Answer:A
+
+10. For explicit call _________________
+a) The destructor must be private
+b) The destructor must be public
+c) The destructor must be protected
+d) The destructor must be defined outside the class
+Answer:B
+
+PLOYMORPHISM:
+============
+1. Which among the following best describes polymorphism?
+a) It is the ability for a message/data to be processed in more than one form
+b) It is the ability for a message/data to be processed in only 1 form
+c) It is the ability for many messages/data to be processed in one way
+d) It is the ability for undefined message/data to be processed in at least one way
+ Answer:A
+
+2. What do you call the languages that support classes but not polymorphism?
+a) Class based language
+b) Procedure Oriented language
+c) Object-based language
+d) If classes are supported, polymorphism will always be supported
+Answer:C
+
+3. Which among the following is the language which supports classes but not polymorphism?
+a) SmallTalk
+b) Java
+c) C++
+d) Ada
+Answer:D
+
+4. If same message is passed to objects of several different classes and all of those can respond in a different way, what is this feature called?
+a) Inheritance
+b) Overloading
+c) Polymorphism
+d) Overriding
+Answer:C
+
+5. Which type of function among the following shows polymorphism?
+a) Inline function
+b) Virtual function
+c) Undefined functions
+d) Class member functions
+Answer:B
+
+6. In case of using abstract class or function overloading, which function is supposed to be called first?
+a) Local function
+b) Function with highest priority in compiler
+c) Global function
+d) Function with lowest priority because it might have been halted since long time, because of low priority
+Answer:B
+
+7. Which among the following can’t be used for polymorphism?
+a) Static member functions
+b) Member functions overloading
+c) Predefined operator overloading
+d) Constructor overloading
+Answer:A
+
+8. Which among the following can show polymorphism?
+a) Overloading ||
+b) Overloading +=
+c) Overloading <<
+d) Overloading &&
+Answer:c
+
+9. Which problem may arise if we use abstract class functions for polymorphism?
+a) All classes are converted as abstract class
+b) Derived class must be of abstract type
+c) All the derived classes must implement the undefined functions
+d) Derived classes can’t redefine the function
+Answer:C
+
+10. Which among the following is not true for polymorphism?
+a) It is feature of OOP
+b) Ease in readability of program
+c) Helps in redefining the same functionality
+d) Increases overhead of function definition always
+Answer:D
+
+ENCAPSULATION:
+=============
+1. Which among the following best describes encapsulation?
+a) It is a way of combining various data members into a single unit
+b) It is a way of combining various member functions into a single unit
+c) It is a way of combining various data members and member functions into a single unit which can operate on any data
+d) It is a way of combining various data members and member functions that operate on those data members into a single unit
+Answer:D
+
+2. If data members are private, what can we do to access them from the class object?
+a) Create public member functions to access those data members
+b) Create private member functions to access those data members
+c) Create protected member functions to access those data members
+d) Private data members can never be accessed from outside the class
+Answer:a
+
+3. While using encapsulation, which among the following is possible?
+a) Code modification can be additional overhead
+b) Data member’s data type can be changed without changing any other code
+c) Data member’s type can’t be changed, or whole code have to be changed
+d) Member functions can be used to change the data type of data members
+Answer:b
+
+4. Which feature can be implemented using encapsulation?
+a) Inheritance
+b) Abstraction
+c) Polymorphism
+d) Overloading
+Answer:b
+
+5. Find which of the following uses encapsulation?
+a) void main(){ int a; void fun( int a=10; cout<<a); fun(); }
+b) class student{ int a; public: int b;};
+c) class student{int a; public: void disp(){ cout<<a;} };
+d) struct topper{ char name[10]; public : int marks; }
+Answer:C
+
+6. Encapsulation helps in writing Which classes in java
+a) Mutable
+b) Abstract
+c) Wrapper
+d) Immutable
+Answer:D
+
+7. Which among the following should be encapsulated?
+a) The data which is prone to change is near future
+b) The data prone to change in long terms
+c) The data which is intended to be changed
+d) The data which belongs to some other class
+Answer:A
+
+8. How can Encapsulation be achieved?
+a) Using Access Specifiers
+b) Using only private members
+c) Using inheritance
+d) Using Abstraction
+Answer:A
+
+9. Which among the following violates the principle of encapsulation almost always?
+a) Local variables
+b) Global variables
+c) Public variables
+d) Array variables
+Answer:B
+
+10. Which among the following would destroy the encapsulation mechanism if it was allowed in programming?
+a) Using access declaration for private members of base class
+b) Using access declaration for public members of base class
+c) Using access declaration for local variable of main() function
+d) Using access declaration for global variables
+Answer:A
+
+ABSTRACTION:
+============
+1. Which among the following best defines abstraction?
+a) Hiding the implementation
+b) Showing the important data
+c) Hiding the important data
+d) Hiding the implementation and showing only the features
+Answer:D
+
+2. Hiding the implementation complexity can:
+a) Make the programming easy
+b) Make the programming complex
+c) Provide more number of features
+d) Provide better features
+Answer:A
+
+3. Class is _________ abstraction
+a) Object
+b) Logical
+c) Real
+d) Hypothetical
+Answer:B
+
+4. Object is ________ abstraction
+a) Object
+b) Logical
+c) Real
+d) Hypothetical
+Answer:C
+
+5. Abstraction gives higher degree of ________
+a) Class usage
+b) Program complexity
+c) Idealized interface
+d) Unstable interface
+Answer:C
+
+6. Abstraction can apply to:
+a) Control and data
+b) Only data
+c) Only control
+d) Classes
+Answer:A
+
+7. Which among the following can be viewed as combination of abstraction of data and code.
+a) Class
+b) Object
+c) Inheritance
+d) Interfaces
+Answer:B
+
+8. Abstraction principle includes___________
+a) Use abstraction at its minimum
+b) Use abstraction to avoid longer codes
+c) Use abstraction whenever possible to avoid duplication
+d) Use abstraction whenever possible to achieve OOP
+Answer:C
+
+9. If two classes combine some private data members and provides public member functions to access and manipulate those data members. Where is abstraction used?
+a) Using private access specifier for data members
+b) Using class concept with both data members and member functions
+c) Using public member functions to access and manipulate the data members
+d) Data is not sufficient to decide what is being used
+Answer:c
+
+10. Encapsulation and abstraction differ as:
+a) Binding and Hiding respectively
+b) Hiding and Binding respectively
+c) Can be used any way
+d) Hiding and hiding respectively
+Answer:A
+
+INHERITANCE:
+============
+1. Which among the following best describes the Inheritance?
+a) Copying the code already written
+b) Using the code already written once
+c) Using already defined functions in programming language
+d) Using the data and functions into derived segment
+Answer:D
+
+2. How many basic types of inheritance are provided as OOP feature?
+a) 4
+b) 3
+c) 2
+d) 1
+Answer:A
+
+3. If single inheritance is used, program will contain ________________
+a) At least 2 classes
+b) At most 2 classes
+c) Exactly 2 classes
+d) At most 4 classes
+Answer:A
+
+4. Single level inheritance supports _____________ inheritance.
+a) Runtime
+b) Compile time
+c) Multiple inheritance
+d) Language independency
+Answer:A
+
+5. If all the classes use private inheritance in multilevel inheritance then ______________
+a) It will not be called multilevel inheritance
+b) Each class can access only non-private members of its parent
+c) Each subsequent class can access all members of previous level parent classes
+d) None of the members will be available to any other class
+Answer:B
+
+6. Multilevel inheritance allows _________________ in the program.
+a) Only 7 levels of inheritance
+b) At least 7 levels of inheritance
+c) At most 16 levels of inheritance
+d) As many levels of inheritance as required
+Answer:D
+
+7. Why does diamond problem arise due to multiple inheritance?
+a) Methods with same name creates ambiguity and conflict
+b) Methods inherited from the superclass may conflict
+c) Derived class gets overloaded with more than two class methods
+d) Derived class can’t distinguish the owner class of any derived method
+Answer:A
+
+8. How many base classes can a derived class have which is implementing multiple inheritance?
+a) Only 2
+b) At least 2
+c) At most 2
+d) As many as required
+Answer:D
+
+9. Which among the following is best to define hierarchical inheritance?
+a) More than one classes being derived from one class
+b) More than 2 classes being derived from single base class
+c) At most 2 classes being derived from single base class
+d) At most 1 class derived from another class
+Answer:A
+
+10. Do members of base class gets divided among all of its child classes ?
+a) Yes, equally
+b) Yes, depending on type of inheritance
+c) No, it’s doesn’t get divided
+d) No, it may or may not get divided
+Answer:C
+
+EXCEPTION_HANDLING:
+===================
+1. What is an exception?
+a) Problem arising during compile time
+b) Problem arising during runtime
+c) Problem in syntax
+d) Problem in IDE
+Answer:B
+
+2. Why do we need to handle exceptions?
+a) To prevent abnormal termination of program
+b) To encourage exception prone program
+c) To avoid syntax errors
+d) To save memory
+Answer:A
+
+3. An exception may arise when _______________
+a) Input is fixed
+b) Input is some constant value of program
+c) Input given is invalid
+d) Input is valid
+Answer:C
+
+4. If a file that needs to be opened is not found in the target location then _____________
+a) Exception will be produced
+b) Exceptions are not produced
+c) Exception might get produced because of syntax
+d) Exceptions are not produced because of logic
+Answer:A
+
+5. Which is the universal exception handler class?
+a) Object
+b) Math
+c) Errors
+d) Exceptions
+Answer:D
+
+6. What are two exception classes in hierarchy of java exceptions class?
+a) Runtime exceptions only
+b) Compile time exceptions only
+c) Runtime exceptions and other exceptions
+d) Other exceptions
+Answer:C
+
+7. Which are the two blocks that are used to check error and handle the error?
+a) Try and catch
+b) Trying and catching
+c) Do and while
+d) TryDo and Check
+Answer:A
+
+8. Multiple catch blocks __________________
+a) Are mandatory for each try block
+b) Can be combined into a single catch block
+c) Are not possible for a try block
+d) Can never be associated with a single try block
+Answer:B
+
+9. How many catch blocks can a single try block can have?
+a) Only 1
+b) Only 2
+c) Maximum 127
+d) As many as required
+Answer:D
+
+10. Which among the following is not a method of Throwable class?
+a) public String getMessage()
+b) public Throwable getCause()
+c) public Char toString()
+d) public void printStackTrace()
+Answer:C
+
+THREADS:
+=========
+1. Which of these method can be used to make the main thread to be executed last among all the threads?
+A. stop() B. sleep() C. join() D. call() Answer:B
+
+2.Which of these method is used to find out that a thread is still running or not?
+A. run() B. Alive() C. isAlive() D. checkRun() Answer:C
+
+3. What is the default value of priority variable MIN_PRIORITY AND MAX_PRIORITY?
+A. 0 & 256 B. 0 & 1 C. 1 & 10 D. 1 & 256 Answer:C
+
+4. Which of these method waits for the thread to treminate?
+A. sleep() B. isAlive() C. join() D. stop() Answer:C
+
+5. Which of these method is used to explicitly set the priority of a thread?
+A. set() B. make() C. setPriority() D. makePriority() Answer:C
+
+6. What is synchronization in reference to a thread?
+A. It’s a process of handling situations when two or more threads need access to a shared resource.
+B. Its a process by which many thread are able to access same shared resource simultaneously.
+C. Its a process by which a method is able to access many different threads simultaneously.
+D. Its a method that allow to many threads to access any information require.
+Answer:A
+
+7. Which of these interface is implemented by Thread class?
+A. Runnable B. Connections C. Set D. MapConnections Answer:A
+
+8. Which of these statement is incorrect?
+A. A thread can be formed by implementing Runnable interface only.
+B. A thread can be formed by a class that extends Thread class.
+C. start() method is used to begin execution of the thread.
+D. run() method is used to begin execution of a thread before start() method in special cases.
+Answer:D
+
+9. What is multithreaded programming?
+A. It’s a process in which two different processes run simultaneously.
+B. It’s a process in which two or more parts of same process run simultaneously.
+C. Its a process in which many different process are able to access same information.
+D. Its a process in which a single process can access information from many sources.
+View Answer:B
+
+10. Which of these are types of multitasking?
+A. Process based B. Thread based C. Process and Thread based D. None of the mentioned Answer:C
+
+COLLECTION:
+===========
+1. Which of these methods deletes all the elements from invoking collection?
+A. clear() B. reset() C. delete() D. refresh() Answer:A
+
+2. What is Collection in Java?
+A. A group of objects B. A group of classes C. A group of interfaces D. None of the mentioned Answer:A
+
+3. Which of these interface declares core method that all collections will have?
+A. set B. EventListner C. Comparator D. Collection Answer:D
+
+4. Which of these interface handle sequences?
+A. Set B. List C. Comparator D. Collection Answer:B
+
+5.8. Which of these interface is not a part of Java’s collection framework?
+A. List B. Set C. SortedMap D. SortedList Answer:D
+
+6. Which of these interface must contain a unique element?
+A. Set B. List C. Array D. Collection Answer:A
+
+7. Which of these is Basic interface that all other interface inherits?
+A. Set B. Array C. List D. Collection Answer:D
+
+8. Which of these is an incorrect form of using method max() to obtain maximum element?
+A. max(Collection c) B. max(Collection c, Comparator comp) C. max(Comparator comp) D. max(List c)  Answer:C
+
+9. Which of these methods can randomize all elements in a list?
+A. rand() B. randomize() C. shuffle() D. ambigous() Answer:C
+
+10. Which of these is true about unmodifiableCollection() method?
+A. unmodifiableCollection() returns a collection that cannot be modified.
+B. unmodifiableCollection() method is available only for List and Set.
+C. unmodifiableCollection() is defined in Collection class.
+D. None of the mentioned.
+Answer:B
+
+StringsHandling:
+====================
+1. Which of these class is superclass of String and StringBuffer class?
+a) java.util
+b) java.lang
+c) ArrayList
+d) None of the mentioned
+Answer:B
+
+2. Which of these operators can be used to concatenate two or more String objects?
+a) +
+b) +=
+c) &
+d) ||
+Answer:A
+
+3. Which of these class is superclass of String and StringBuffer class?
+a) java.util
+b) java.lang
+c) ArrayList
+d) None of the mentioned
+Answer:D
+
+4. Which of these operators can be used to concatenate two or more String objects?
+a) +
+b) +=
+c) &
+d) ||
+Answer:A
+
+5. What will be output of the following code?
+
+public class Boxer1 
+{
+    Integer i;
+    int x;
+   public Boxer1(int y) 
+   {
+        x = i+y;
+        System.out.println(x);
+   }
+   public static void main(String[] args) 
+   {
+       new Boxer1 (new Integer(4));
+   }
+}
+a) The value “4” is printed at the command line
+b) Compilation fails because of an error in line
+c) A NullPointerException occurs at runtime
+d) An IllegalStateException occurs at runtime
+View Answer:D
+
+6. Which of these method of class String is used to compare two String objects for their equality?
+a) equals()
+b) Equals()
+c) isequal()
+d) Isequal()
+Answer:A
+
+7. Which of these methods is used to compare a specific region inside a string with another specific region in another string?
+a) regionMatch()
+b) match()
+c) RegionMatches()
+d) regionMatches()
+Answer:D
+
+8. Which of this method of class String is used to extract a substring from a String object?
+a) substring()
+b) Substring()
+c) SubString()
+d) None of the mentioned
+Answer:A
+
+9. What will s2 contain after following lines of code?
+
+ String s1 = "one";
+String s2 = s1.concat("two")
+a) one
+b) two
+c) onetwo
+d) twoone
+Answer:C
+
+10. Which of these class is used to create an object whose character sequence is mutable?
+a) String()
+b) StringBuffer()
+c) String() & StringBuffer()
+d) None of the mentioned
+Answer:B
